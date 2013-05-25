@@ -130,7 +130,7 @@ html, body{
     height: 100%;
     clear:both;
     color:white;
-    background-color: grey;
+    background-color: #201D1D;
 }
 
 #Projects{
@@ -138,7 +138,7 @@ html, body{
     height: 100%;
     clear:both;
     color:white;
-    background-color: blue;
+    background-color: #201D1D;
 }
 
 #Resume{
@@ -147,7 +147,7 @@ html, body{
     
     clear:both;
     color:white;
-    background-color: red;
+    background-color: #201D1D;
 }
 
 #break{
@@ -156,5 +156,5 @@ html, body{
     
     clear:both;
     color:white;
-    background-color: pink;
+    background-color: white;
 }
