@@ -11,10 +11,11 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function(){
+                alert("Currently under work!!!!");
                 $("#navbar a").click(function(){
                     $("html, body").animate({
                         scrollTop: $($(this).attr("href")).position().top+$(this).scrollTop()
-                    }, 400);
+                    }, 600);
                     return false;
                 });
             });
@@ -25,10 +26,10 @@
             <div class = "nav">
                 <nav id="navbar">
                     <ul>
-                        <li><a href="#Main">HOME</a></li> 
-                        <li><a href="#About">ABOUT ME</a></li> 
-                        <li><a href="#Projects">PROJECTS</a></li> 
-                        <li><a href="#Resume">RESUME</a></li>
+                        <li><a href="#Main" id="HOME">HOME</a></li> 
+                        <li><a href="#About" id="ABOUT ME">ABOUT ME</a></li> 
+                        <li><a href="#Projects" id="PROJECTS">PROJECTS</a></li> 
+                        <li><a href="#Resume" id="RESUME">RESUME</a></li>
                         <li><a href="#break"></a></li>
                     </ul>
                 </nav>
@@ -43,9 +44,17 @@
             
             <div id="About">
                 About
+                <p>
+                    <!--I'm a Waterloo student enrolled in Software Engineering, who is currently interning as a Web Developer at Public Works and Government Services in Toronto.-->
+                </p>
             </div>    
             <div id="Projects">
                 Projects
+                <!--<br/>
+                OSME - internet
+                <br/>
+                ORION - intranet-->
+                
             </div>
             <div id="Resume">
                 Resume
@@ -56,13 +65,20 @@
         <div class="footer">
             <div class="current">
                 HOME
+                <script>
+                    $("#navbar a").click(function(){
+                    var id=$(this).attr('id');
+                        $('.current').hide().html(id).fadeIn(1200);
+                    });
+                </script>
             </div>
             <div class="links">
-                   <ul><li>
-                        <a href="#"><img src="github.png"></a>
-                       </li>
-                   </ul>
-                </div>
+               <ul><li>
+                    <a href="https://github.com/bumjung94"><img src="github.png"></a>
+                   </li>
+               </ul>
             </div>
+        </div>
+                
     </body>
 </html>
