@@ -8,11 +8,6 @@
     src: url(Open-Sans-Condensed-Light.ttf);
 }
 
-@font-face{
-    font-family: "krn";
-    src: url(UnBom.ttf);
-}
-
 html, body{
     margin: 0;
     padding: 0;
