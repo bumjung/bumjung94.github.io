@@ -24,7 +24,7 @@ body{
 
 #header{
     height:auto;
-    margin-bottom:60px;
+    margin-bottom:70px;
 }
 
 #header h1{
@@ -65,7 +65,7 @@ h2{
 #links ul li{
     display:inline;
 }
-#links li.current{
+#links li a.current{
     color:rgb(55, 153, 223);
     cursor:pointer;
 }
@@ -92,31 +92,51 @@ h2{
     margin-bottom:-10px;
     padding-bottom: 0;
 }
+#content h5{
+    font-size:15px;
+    margin-bottom:10px;
+    margin-top:8px;
+    padding:0;
+}
 #content p{
     font-size:19px;
 }
-
-#content ul{
+#content p.description{
+    margin-top:0px;
+    font-size:17px;
+}
+#content ul.emply{
+    list-style: none;
+    padding-left:10px;
+    margin:0;
+}
+#content ul.emply li{
+    padding:5px;
+    margin:0;
+}
+#content ul.lang{
     list-style: none;
     padding:0;
     margin-left:20px;
     width:200px;
 }
-#content li{
+#content ul.lang li{
     font-size:18px;
     padding-bottom:10px;
 }
 #content li:before {
     content: "• ";
-    color: rgb(55, 153, 223); /* or whatever color you prefer */
-}
-#content ul{
-    
+    color: rgb(55, 153, 223);
 }
 .content-box{
     padding:10px;
     width:457px;
-    height:305px;
+    height:330px;
+}
+.content-full-box{
+    padding:10px;
+    width:910px;
+    height:330px;
 }
 .content-left{
     float:left;
@@ -124,4 +144,12 @@ h2{
 .content-right{
     float:right;
 }
-    
+
+#resume .resume-box{
+    border: 5px solid rgb(55, 153, 223);
+    border-right: 10px solid rgb(55, 153, 223);
+}
+
+.invisible{
+    display:none;
+}
