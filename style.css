@@ -1,161 +1,117 @@
-@font-face{
-    font-family: "NT";
-    src: url(Neou-Thin.ttf);
+html{
+    overflow:hidden;
+    margin-left:150px;
+    margin-right:150px;
 }
 
-@font-face{
-    font-family: "OSCL";
-    src: url(Open-Sans-Condensed-Light.ttf);
+body{
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    color:#333;
+    font-family:Arial;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-}
-
-/*<!-- -------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- -----------------------HEADER----------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->*/
-.header{
-    height:10%;
-    max-height:100px;
+#space-top{
     width:100%;
-    border-bottom: 2px solid white;
-    
-    background-color:rgb(0,0,0);
-    background-size:cover;
-    position: fixed;
-    z-index:1000;
+    height:130px;
+    max-height:150px;
 }
-.nav ul{
-    width:96%;
-    list-style: none;
-    text-align:center;
-    color:white;
+
+#page{
+    margin:0;
+    padding-top:30px;
 }
-.nav ul li{
-    display:inline;
-    padding: 10px 0px 10px 0px;
-    margin: 0px 115px 0px 115px;
+
+#header{
+    height:auto;
+    margin-bottom:60px;
 }
-.nav ul li a{
+
+#header h1{
+    margin-bottom:-10px;
+    font-size:80px;
+    font-weight:700;
+    text-transform:uppercase;
+    -webkit-text-stroke: 0.5px;
+}
+
+h2{
+    font-size:23px;
+    font-weight:500;
+    color:rgb(55, 153, 223);
+    -webkit-text-stroke: 0.5px;
+}
+
+#links{
+    margin:0;
+    padding:0;
+    font-weight:200;
+    font-size:23px;
+    -webkit-text-stroke: 0.5px;
+}
+#links ul{
+    list-style:none;
+    padding-left:0;
+}
+#links ul li a{
+    text-transform:uppercase;
+    list-style:none;
     text-decoration:none;
-    font-family: "OSCL";
-    font-size: 1.5em;
-    color: white;
+    color:grey;
 }
-/*<!-- -------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- -----------------------FOOTER----------------------- -->
-<!-- ---------------------------------------------------- -->
-<!-- ---------------------------------------------------- -->*/
-.footer{
-    bottom:0;
-    height:10%;
+#links ul li a:hover{
+    color:rgb(55, 153, 223);
+}
+#links ul li{
+    display:inline;
+}
+#links li.current{
+    color:rgb(55, 153, 223);
+    cursor:pointer;
+}
+#links li.break{
+    color:#b7c2cc;
+    cursor:default;
+}
+
+#content{
     width:100%;
-    max-height:100px;
-    
-    color:white;
-    border-top: 3px solid white;
-    
-    background-color:rgb(0,0,0);
-    background-size:cover;
-    position: fixed;
 }
-.footer img{
-    width: 40px;
-    height: auto;
+
+#content h2{
+    /*color:rgb(55, 153, 223);
+    -webkit-text-stroke: 0.5px;*/
+    border-bottom: 1px solid #b7c2cc;
 }
-.current{
-    font-family:"NT";
-    font-size:3.3em;
+
+#education{
+    padding:10px;
+    width:457px;
+    height:auto;
     float:left;
-    margin-left:10px;   
-    color:white;
 }
-.links ul{
+
+#info{
+    padding:10px;
+    width:457px;
+    height:auto;
+    /*border: 1px solid #b7c2cc;*/
     float:right;
-    list-style: none;
-    color:white;
-    margin-right:1%;
-}
-.links ul li{
-    display:inline;
-}
-.links ul li a{
-    text-decoration:none;
-    text-align:center;
-}
-/*<!-- ------------------------------------------------ -->
-<!-- -------------------------------------------------- -->
-<!-- -----------------------MAIN----------------------- -->
-<!-- -------------------------------------------------- -->
-<!-- -------------------------------------------------- -->*/
-.content{
-    top:10%;
-    height:90%;
-    width:100%;
-    position:absolute;
 }
 
-#Main{
-    width: 100%;
-    height: 90%;
-    background-image:url(main.png);
-    background-size:cover;
-    clear:both;
-}    
-#Main h1{
-    font-family: "NT";
-    font-size: 6em;
-    margin: 0px;
-    padding: 7.5px 15px 7.5px 15px;
-    color:white;
-    text-align:right;
-    background: rgba(0,0,0,0.6);
-}
-#Main h3{
-    font-family: "NT";
-    font-size: 1.5em;
-    margin:0px;
-    padding: 7.5px 15px 7.5px 15px;
-    color:white;
-    text-align:right;
-    background: rgba(0,0,0,0.6);
+#test1{
+    padding:10px;
+    width:457px;
+    height:auto;
+    /*border: 1px solid #b7c2cc;*/
+    float:left;
 }
 
-#About{
-    width: 100%;
-    height: 100%;
-    clear:both;
-    color:white;
-    background-color: #201D1D;/*#151B54;*/
-}
-
-#Projects{
-    width: 100%;
-    height: 100%;
-    clear:both;
-    color:white;
-    background-color: #201D1D;
-}
-
-#Resume{
-    width: 100%;
-    height: 90%;
-    
-    clear:both;
-    color:white;
-    background-color: #201D1D;
-}
-
-#break{
-    width: 100%;
-    height: 10%;
-    
-    clear:both;
-    color:white;
-    background-color: white;
+#test2{
+    padding:10px;
+    width:457px;
+    height:auto;
+    /*border: 1px solid #b7c2cc;*/
+    float:right;
 }
