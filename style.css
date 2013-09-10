@@ -39,7 +39,7 @@ h2{
     font-size:23px;
     font-weight:500;
     color:rgb(55, 153, 223);
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.2px;
 }
 
 #links{
@@ -47,7 +47,7 @@ h2{
     padding:0;
     font-weight:200;
     font-size:23px;
-    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke: 0.2px;
 }
 #links ul{
     list-style:none;
