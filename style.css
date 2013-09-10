@@ -79,8 +79,6 @@ h2{
 }
 
 #content h2{
-    /*color:rgb(55, 153, 223);
-    -webkit-text-stroke: 0.5px;*/
     border-bottom: 1px solid #b7c2cc;
 }
 #content h3{
@@ -95,12 +93,30 @@ h2{
     padding-bottom: 0;
 }
 #content p{
+    font-size:19px;
+}
+
+#content ul{
+    list-style: none;
+    padding:0;
+    margin-left:20px;
+    width:200px;
+}
+#content li{
     font-size:18px;
+    padding-bottom:10px;
+}
+#content li:before {
+    content: "• ";
+    color: rgb(55, 153, 223); /* or whatever color you prefer */
+}
+#content ul{
+    
 }
 .content-box{
     padding:10px;
     width:457px;
-    height:300px;
+    height:305px;
 }
 .content-left{
     float:left;
