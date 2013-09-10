@@ -1,11 +1,10 @@
 html{
-    overflow:hidden;
     margin-left:150px;
     margin-right:150px;
+    width:1000px;
 }
 
 body{
-    overflow:hidden;
     margin:0;
     padding:0;
     color:#333;
@@ -84,34 +83,29 @@ h2{
     -webkit-text-stroke: 0.5px;*/
     border-bottom: 1px solid #b7c2cc;
 }
-
-#education{
+#content h3{
+    margin-bottom:-10px;
+    font-weight:700;
+    font-size:24px;
+    color:grey;
+}
+#content h4{
+    font-size:21px;
+    margin-bottom:-10px;
+    padding-bottom: 0;
+}
+#content p{
+    font-size:18px;
+}
+.content-box{
     padding:10px;
     width:457px;
-    height:auto;
+    height:300px;
+}
+.content-left{
     float:left;
 }
-
-#info{
-    padding:10px;
-    width:457px;
-    height:auto;
-    /*border: 1px solid #b7c2cc;*/
+.content-right{
     float:right;
 }
-
-#test1{
-    padding:10px;
-    width:457px;
-    height:auto;
-    /*border: 1px solid #b7c2cc;*/
-    float:left;
-}
-
-#test2{
-    padding:10px;
-    width:457px;
-    height:auto;
-    /*border: 1px solid #b7c2cc;*/
-    float:right;
-}
+    
