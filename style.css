@@ -130,13 +130,13 @@ h2{
 }
 .content-box{
     padding:10px;
-    width:457px;
-    height:330px;
+    width:450px;
+    height:390px;
 }
 .content-full-box{
     padding:10px;
     width:910px;
-    height:330px;
+    height:390px;
 }
 .content-left{
     float:left;
@@ -144,7 +144,10 @@ h2{
 .content-right{
     float:right;
 }
-
+#resume{
+    width:auto;
+    height:800px;
+}
 #resume .resume-box{
     border: 5px solid rgb(55, 153, 223);
     border-right: 10px solid rgb(55, 153, 223);

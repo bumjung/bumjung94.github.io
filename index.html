@@ -25,9 +25,9 @@
                         var newCntnt=$("#content " + "#" + newID);
                         
                             $(oldCntnt).fadeOut(450, function() {
-                                oldCntnt=$(oldCntnt).addClass('invisible');
+                                oldCntnt=$(oldCntnt).toggleClass('invisible');
                                 $(newCntnt).fadeIn(450, function() {
-                                    newCntnt=$(newCntnt).removeClass('invisible');
+                                    newCntnt=$(newCntnt).toggleClass('invisible');
                                 });
                           });
                     }
@@ -69,7 +69,9 @@
                 <div id="home" class="visible">
                     <div class="content-box content-left">
                         <h2>ABOUT ME</h2>
-                        <p>I am currently attending University of Waterloo and majoring in Software Engineering Co-op (currently in my second year). Software engineering is a systematic and disciplined approach to developing software. It applies both computer science and engineering principles and practices to the creation, process, and maintenance of software systems.<!--I love to come up with an idea, put it into action, and watch it come to life - which is why I love programming!--> This website is designed to showcase me, as a person, student and as a professional. You are always welcomed to contact me using the contact information as provided.</p>
+                        <p>I am currently attending University of Waterloo and majoring in Software Engineering Co-op (currently in my second year).</p>
+                        <p>Software engineering is a systematic and disciplined approach to developing software. It applies both computer science and engineering principles and practices to the creation, process, and maintenance of software systems.<!--I love to come up with an idea, put it into action, and watch it come to life - which is why I love programming!--></p>
+                        <p>This website is designed to showcase me, as a person, student and as a professional. You are always welcomed to contact me using the contact information as provided.</p>
                     </div>
                     <div class="content-box content-right">
                         <h2>EMPLOYMENT</h2>
@@ -77,9 +79,9 @@
                         <h4>Web Application Developer</h4>
                         <h5>Public Works and Government Services (PWGSC)</h5>
                         <ul class="emply">
-                            <li>Developed web applications and web sites in Intranet and Internet sites using HTML, CSS, Javascript and Coldfusion</li>
-                            <li>Responsible for developing web pages compatible with all standard web browsers while ensuring W3C accessibility compliance</li>
-                            <li>Enhanced Dreamweaver regex algorithm using Javascript to find and replace abbreviations with HTML tags</li>
+                            <li>Developed web applications and web sites in Intranet and Internet sites using HTML, CSS, Javascript and Coldfusion.</li>
+                            <li>Responsible for developing web pages compatible with all standard web browsers while ensuring W3C accessibility compliance.</li>
+                            <li>Enhanced Dreamweaver regex algorithm using Javascript to find and replace abbreviations with appropriate 'abbr' tags.</li>
                         </ul>
                     </div>
                     <div class="content-box content-left">
@@ -94,6 +96,7 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JAVASCRIPT</li>
+                        <li>JQUERY</li>
                         <li>COLDFUSION</li>
                         </ul>
                     </div>
