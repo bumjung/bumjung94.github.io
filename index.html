@@ -9,6 +9,18 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function(){
+                $('.contact-list li').mouseover(function() {
+                    $(this).children().children().attr('src', "pics/img_"+ this.id +"-hover.png");
+                    $(this).children().css("color","rgb(55, 153, 223)");
+                    return false;
+                });
+                
+                $('.contact-list li').mouseout(function() {
+                    $(this).children().children().attr('src', "pics/img_"+ this.id +".png");
+                    $(this).children().css("color","#333");
+                    return false;
+                });
+                
                 $("#navbar a").click(function(){
                     
                     var oldPage = $("#navbar .current"); //get the element of current page
@@ -34,6 +46,7 @@
                     return false;
                 });
             });
+            
         </script>
     </head>
     <body>
@@ -60,10 +73,10 @@
                     <h2>WATERLOO SOFTWARE ENGINEERING '17</h2>
                 </div>
                 <div class="content-right">
-                    <ul class = "contact-list">
-                        <li><img src="pics/img_mail.png" /> <a href="mailto:bumj94@gmail.com">bumj94@gmail.com</a></li>
-                        <li><img src="pics/img_github.png" class="img-resize"/> <a target="_blank" href="https://github.com/bumjung94">github.com/bumjung94</a></li>
-                        <li><img src="pics/img_linkedin.png" /> - </li>
+                    <ul class="contact-list">
+                        <li id="mail"><a href="mailto:bumj94@gmail.com"><img src="pics/img_mail.png"/>bumj94@gmail.com</a></li>
+                        <li id="github"><a target="_blank" href="https://github.com/bumjung94"><img src="pics/img_github.png" class="img-resize"/>github.com/bumjung94</a></li>
+                        <li id="linkedin"><a href="#"><img src="pics/img_linkedin.png" /> - </a></li>
                     </ul>
                 </div>
             </div>
