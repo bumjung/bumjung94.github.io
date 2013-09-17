@@ -1,3 +1,12 @@
+@font-face{
+    font-family: "OSCL";
+    src: url(fonts/Open-Sans-Condensed-Light.ttf);
+}
+@font-face{
+    font-family: "clar";
+    src: url(fonts/clarendon.ttf);
+}
+
 html{
     margin-left:150px;
     margin-right:150px;
@@ -23,16 +32,35 @@ body{
 }
 
 #header{
-    height:auto;
-    margin-bottom:70px;
+    height:200px;
+    padding-top:30px;
+    padding-bottom:30px;
 }
-
 #header h1{
+    margin-top:15px;
     margin-bottom:-10px;
     font-size:80px;
     font-weight:700;
     text-transform:uppercase;
     -webkit-text-stroke: 0.5px;
+}
+#header ul.contact-list{
+    list-style: none;
+    padding:0;
+    padding-top:5px;
+    margin-left:30px;
+    height:100%;
+    width:auto;
+}
+#header ul.contact-list li{
+    font-family:"OSCL";
+    font-size:24px;
+    padding:4px;
+    color:#585858;
+    -webkit-text-stroke: 0.2px;
+}
+#header ul.contact-list li img{
+    margin-right:10px;
 }
 
 h2{
@@ -43,10 +71,11 @@ h2{
 }
 
 #links{
+    font-family:"OSCL";
     margin:0;
     padding:0;
     font-weight:200;
-    font-size:23px;
+    font-size:27px;
     -webkit-text-stroke: 0.2px;
 }
 #links ul{
@@ -79,6 +108,7 @@ h2{
 }
 
 #content h2{
+    font-weight:500;
     border-bottom: 1px solid #b7c2cc;
 }
 #content h3{
@@ -99,11 +129,14 @@ h2{
     padding:0;
 }
 #content p{
+    font-family:"clar";
     font-size:19px;
 }
-#content p.description{
-    margin-top:0px;
-    font-size:17px;
+#content li{
+    font-family:"clar";
+}
+#content .about p{
+    font-size:19px;
 }
 #content ul.emply{
     list-style: none;
@@ -111,6 +144,7 @@ h2{
     margin:0;
 }
 #content ul.emply li{
+    font-size:17px;
     padding:5px;
     margin:0;
 }
@@ -128,6 +162,7 @@ h2{
     content: "• ";
     color: rgb(55, 153, 223);
 }
+
 .content-box{
     padding:10px;
     width:450px;
@@ -151,8 +186,14 @@ h2{
 #resume .resume-box{
     border: 5px solid rgb(55, 153, 223);
     border-right: 10px solid rgb(55, 153, 223);
+    border-radius: 11px;
 }
 
 .invisible{
     display:none;
+}
+
+.img-resize{
+    width:27px;
+    height:27px;
 }
