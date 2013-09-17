@@ -9,16 +9,16 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function(){
+                
                 $('.contact-list li').mouseover(function() {
+                    
                     $(this).children().children().attr('src', "pics/img_"+ this.id +"-hover.png");
                     $(this).children().css("color","rgb(55, 153, 223)");
-                    return false;
                 });
                 
                 $('.contact-list li').mouseout(function() {
                     $(this).children().children().attr('src', "pics/img_"+ this.id +".png");
                     $(this).children().css("color","#333");
-                    return false;
                 });
                 
                 $("#navbar a").click(function(){
@@ -43,7 +43,6 @@
                                 });
                           });
                     }
-                    return false;
                 });
             });
             
