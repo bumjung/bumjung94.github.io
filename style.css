@@ -8,9 +8,6 @@
 }
 
 html{
-    margin-left:150px;
-    margin-right:150px;
-    width:1000px;
 }
 
 body{
@@ -27,8 +24,10 @@ body{
 }
 
 #page{
-    margin:0;
+    margin-left:auto;
+    margin-right:auto;
     padding-top:30px;
+    width:1000px;
 }
 
 #header{
